@@ -20,8 +20,10 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between px-4">
         <div className="flex items-center space-x-8">
           <Link href="/" className="flex items-center space-x-2">
-            <Flame className="h-6 w-6 text-primary" />
-            <span className="text-xl font-bold">HabitTracker</span>
+            <Flame className="h-6 w-6 text-[#9b59b6]" />
+            <span className="text-xl font-bold bg-gradient-to-r from-[#9b59b6] to-[#3498db] bg-clip-text text-transparent">
+              HabitTracker
+            </span>
           </Link>
           
           <nav className="hidden md:flex items-center space-x-6">
@@ -56,3 +58,4 @@ export function Header() {
     </header>
   )
 }
+

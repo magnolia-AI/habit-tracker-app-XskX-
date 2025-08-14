@@ -44,7 +44,7 @@ export default function Home() {
     <div className="min-h-full">
       <section className="container mx-auto px-4 pt-24 pb-20">
         <div className="max-w-[800px] mx-auto text-center mb-16">
-          <h1 className="text-5xl font-bold tracking-tight lg:text-6xl mb-6">
+          <h1 className="text-5xl font-bold tracking-tight lg:text-6xl mb-6 bg-gradient-to-r from-[#9b59b6] to-[#3498db] bg-clip-text text-transparent">
             Build Better Habits
           </h1>
           <p className="text-xl text-muted-foreground max-w-[600px] mx-auto mb-10">
@@ -52,7 +52,7 @@ export default function Home() {
           </p>
           <Button 
             size="lg" 
-            className="text-lg px-8 py-6"
+            className="text-lg px-8 py-6 bg-gradient-to-r from-[#9b59b6] to-[#3498db] hover:from-[#8e44ad] hover:to-[#2980b9]"
             onClick={() => router.push('/habits')}
           >
             Start Building Habits
@@ -63,8 +63,8 @@ export default function Home() {
           {features.map((feature, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 rounded-full bg-[#9b59b6]/10 flex items-center justify-center mb-4">
+                  <feature.icon className="w-6 h-6 text-[#9b59b6]" />
                 </div>
                 <CardTitle>{feature.title}</CardTitle>
               </CardHeader>
@@ -79,7 +79,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-6">How It Works</h2>
           <div className="grid gap-8 md:grid-cols-3">
             <div className="space-y-2">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground mx-auto">
+              <div className="w-10 h-10 rounded-full bg-[#9b59b6] flex items-center justify-center text-white mx-auto">
                 1
               </div>
               <h3 className="font-semibold">Create Habits</h3>
@@ -88,7 +88,7 @@ export default function Home() {
               </p>
             </div>
             <div className="space-y-2">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground mx-auto">
+              <div className="w-10 h-10 rounded-full bg-[#3498db] flex items-center justify-center text-white mx-auto">
                 2
               </div>
               <h3 className="font-semibold">Track Daily</h3>
@@ -97,7 +97,7 @@ export default function Home() {
               </p>
             </div>
             <div className="space-y-2">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground mx-auto">
+              <div className="w-10 h-10 rounded-full bg-[#2ecc71] flex items-center justify-center text-white mx-auto">
                 3
               </div>
               <h3 className="font-semibold">Achieve Goals</h3>
@@ -111,3 +111,9 @@ export default function Home() {
     </div>
   )
 }
+
+
+
+
+
+

@@ -23,14 +23,14 @@ interface HabitTrackerProps {
 }
 
 const COLORS = [
-  { name: 'Red', value: 'bg-red-500' },
-  { name: 'Blue', value: 'bg-blue-500' },
-  { name: 'Green', value: 'bg-green-500' },
-  { name: 'Yellow', value: 'bg-yellow-500' },
-  { name: 'Purple', value: 'bg-purple-500' },
-  { name: 'Pink', value: 'bg-pink-500' },
-  { name: 'Indigo', value: 'bg-indigo-500' },
-  { name: 'Teal', value: 'bg-teal-500' },
+  { name: 'Amethyst', value: 'bg-[#9b59b6]' },
+  { name: 'Emerald', value: 'bg-[#2ecc71]' },
+  { name: 'Sunflower', value: 'bg-[#f1c40f]' },
+  { name: 'Turquoise', value: 'bg-[#1abc9c]' },
+  { name: 'Orange', value: 'bg-[#e67e22]' },
+  { name: 'Crimson', value: 'bg-[#e74c3c]' },
+  { name: 'Sky', value: 'bg-[#3498db]' },
+  { name: 'Lavender', value: 'bg-[#8e44ad]' },
 ]
 
 export function HabitTracker({ habits, completions, onToggleCompletion, onDeleteHabit, onAddHabit }: HabitTrackerProps) {
@@ -330,6 +330,7 @@ export function HabitTracker({ habits, completions, onToggleCompletion, onDelete
     </div>
   )
 }
+
 
 
 
